@@ -1,0 +1,72 @@
+* { /* poner a 0 los margins y padding de todos los elementos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* modelo de cajas*/
+}
+body {
+    min-height: 100vh; /* altura minima del body al 100% de la ventana*/
+    border: 2px solid black;
+    background-color: mediumpurple;
+    height: 100vh; /* altura del body al 100% de la ventana*/
+    /* max-height: 100vh; /* altura maxima del body al 100% de la ventana*/
+    /* min-height: 100vh; /* altura minima del body al 100% de la ventana*/
+    /*width: 100vw; /* ancho del body al 100% de la ventana*/    
+}
+header { /* selectores de clase*/
+    height: 12vh;   
+    background-color: whitesmoke;
+    border: 2px solid black;
+    /*Flexbox*/
+    display: flex; /* modelo de cajas flexibles*/
+    flex-direction: row; /* direccion de los elementos hijos*/
+    flex-wrap: nowrap; /* no permite que los elementos hijos se envuelvan*/
+    justify-content: space-between; /* alinea los elementos hijos en el eje horizontal*/
+
+}
+header figure {
+    border: 2px solid black;
+    height: 100%;
+}
+header figure img {
+    height: 100%;
+}
+
+/*selector descendiente*/
+header h1 {
+    text-align: center;
+    color: darkblue;
+    border: 2px solid black;
+
+}
+header nav {
+   border: 2px solid black;
+   text-align: center;
+   background-color: plum;
+   padding: 8px;
+}
+header nav a {
+    border: 1px solid black;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: small;
+    padding: 5px;
+
+}
+header nav a:hover {
+    background-color: darkorchid;
+    color: white;
+
+}
+
+main {
+    height: 80vh;
+    background-color: pink;
+}
+
+footer {
+    height: 10vh;
+    background-color: lightblue;
+}

@@ -1,0 +1,49 @@
+/*estructura de un selector css:
+    nombre_del_seletor{
+        propiedad1: valor;
+        propiedad2: valor;
+        propiedad3: valor;
+        ...
+        propiedadN: valor;
+        }*/
+/*h1: es un selector css de etiqueta*/
+h1{
+    /*caracteristica de fuente de letra*/
+    color: blueviolet;/*color*/
+    
+    font-style: oblique;/*estilo*/
+    font-size: 30px;/*tamaño*/
+    font-weight: bold;/*negrita*/
+    font-family: Georgia, 'Times New Roman', Times, serif;/*tipo de letra*/
+    /*font-variant:small-caps; *//* mayusculas*/
+    /* ctrl+k+ para cambiar a nota y ctrl+k+u para cambiar otra vez*/
+
+
+    text-align: center;/*parrafo*/
+    text-decoration: underline;/*decoracion*/
+    text-transform: uppercase; /*mayusculas*/
+    word-spacing: 30px;/*espacio entre palabras*/
+    letter-spacing: 5px;/*espacio entre letras*/
+
+}
+p{
+    text-align: justify;
+    line-height: 2;/*interlineado*/
+    text-indent: 20px;/*sangria en la primera linea*/
+    margin: 20px 50px 30px 10px;/*margen*/
+    /* margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px; es lo mismo que arriba */
+    /* border-top: 5px dotted blueviolet;/*borde arriba*/
+    /* border-bottom: 5px dotted blue; /*borde abajo*/
+    border: 1px solid rgb(52, 0, 101);/*borde todo*/
+    border-radius: 10px;/*borde redondeado*/
+    border-top-left-radius: 60px;/*borde redondeado arriba izquierda*/
+    border-bottom-right-radius: 15px;/*borde redondeado abajo derecha*/
+    padding: 20px;/*relleno*/
+    background-color: rgba(232, 119, 255, 0.751);/*color de fondo*/
+    color: white;/*color de letra*/
+
+
+}

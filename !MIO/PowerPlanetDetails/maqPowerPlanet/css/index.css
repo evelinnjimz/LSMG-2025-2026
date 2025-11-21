@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 320vh;  
+
+}
+header div#menu{
+    color: whitesmoke;
+    flex-basis: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header #menu i{
+    font-size: 30px;
+    color: whitesmoke;
+
+}
+header figure{
+    /*border: 1px solid white;*/
+    color: whitesmoke;
+    /*flex-basis: 20%;*/
+    height: 100%;
+}
+header figure img{
+   height: 100%;
+}
+header form{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+   
+}
+header form input{
+    background-color: whitesmoke;
+    padding: 2px;
+    padding-left: 8px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header nav#top{
+    border: 0px solid whitesmoke;
+    color: whitesmoke;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav a{
+    display: flex;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+header nav a:hover{
+    color: rgb(218, 253, 111);
+}
+header #carrito{
+    color: whitesmoke;
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;  
+    justify-content: space-around; 
+    align-items: center;
+}
+header #carrito i{
+    font-size: 25px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+header{
+    background-color: black;
+    /*flex-basis: 5%;*/
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+/*
+---elementos de linea: img, a, span, i, input
+---elementos de bloques: el resto de etiquetas de este codigo
+
+*/
+main{
+    background-color: whitesmoke;
+    flex-basis: 65%;
+}
+main h4{
+    background-color: whitesmoke;
+    border: 0px solid black;
+    text-align: center;
+    font-size: 24px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 0px;
+}
+main section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+main section article{
+    flex-basis: 20%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    position: relative;
+    
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.2s ease-in;
+}
+main section article:hover{
+    transform: translateY(-10px);
+}
+main section article p{
+
+    color: red;
+}
+main section article .badge{
+    background-color: rgb(183, 67, 139);
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 50%;
+
+    /*efectos especiales*/
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    z-index: 10;
+
+}
+main section article .nombre{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main section article .features{
+   border: 0px solid black;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+}
+main section article .features span{
+    border: 0px solid black;
+    text-align: center;
+    font-size: 14px;
+    padding: 2px;
+} 
+
+main section article p .estrellas i{
+    font-size: 10px;
+    color: gold;
+    margin-right: 3px;
+}
+main section article p .valoracion{
+    font-size: 12px;
+    color: red;
+    margin-right: 3px;
+}
+main section article p .opiniones{
+    font-size: 12px;
+    color: green;
+}
+main section article div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+main section article div .descuento{
+    background-color: rgb(183, 67, 139);
+    color: whitesmoke;
+    padding: 3px;
+    border-radius: 10px;
+    font-size: 12px;
+    height: 50%;
+}
+main section article div .precios{
+    display: flex;
+    flex-direction: column;
+}
+main section article div .pvr{
+    font-size: 15px;
+    text-decoration: line-through;
+    color: gray;
+}
+main section article div .pvp{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}   
+main section article figure{
+    border: 0px solid black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    height: 150px;
+    position: relative;
+}
+main section article figure img{
+    border: 0px solid red;
+
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}
+footer{
+    background-color: black;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+footer nav#sociales{
+    border: 0px solid black;
+    flex-basis: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;   
+    padding-left: 30px;
+    
+}
+footer nav#sociales a{
+    text-decoration: none;
+    border: 0px solid black;
+    background-color: rgb(167, 220, 9);
+    display: inline-block;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    transition: transform 0.3s ease-in-out;
+    
+}
+footer nav#sociales a:hover{
+    transform: translate(0,-10px);
+}
+footer nav#sociales i{
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+
+footer div#suscribete{
+    border: 0px solid black;
+    flex-basis: 50%;
+    color: whitesmoke;
+}
+footer article{
+    border: 0px solid black;
+    flex-basis: 33.33%;
+    padding-top: 20px;
+}
+footer article h2{
+    color: whitesmoke;
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    
+}
+footer article nav{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    
+}
+footer article nav a{
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    border: 0px solid whitesmoke;
+    margin-bottom: 10px; ;
+    height: 30px;
+    align-items: center;
+    text-decoration: none;
+}
+footer article nav a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+footer article nav a span{
+    font-size: 16px;
+    margin-right: 10px;
+
+}
